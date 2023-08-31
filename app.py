@@ -1,7 +1,8 @@
 import streamlit as st
 from utils import *
 autoencoder = Autoencoder()
-autoencoder = torch.load('C:/Users/gerso/OneDrive/Escritorio/ls/prod/autoencoder.pth')
+#autoencoder = torch.load('C:/Users/gerso/OneDrive/Escritorio/ls/prod/autoencoder.pth')
+autoencoder = torch.load('/autoencoder.pth')
 autoencoder.eval()
 #autoencoder = cargar_modelo_preentrenado(r"/autoencoder.pth")
 # Características básicas de la página
